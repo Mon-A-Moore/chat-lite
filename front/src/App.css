@@ -1,0 +1,48 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-two {
+  border: 1px solid rgb(0, 195, 255);
+}
+form {
+  width: 350px;
+  max-width: 350px;
+  border-radius: 5px;
+  padding: 20px;
+}
+button {
+  display: none;
+}
+.name-field {
+  margin-bottom: 40px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background: transparent;
+  border-radius: 5px;
+}
+
+.render-chat {
+  width: 350px;
+  max-width: 350px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+h3 {
+  color: rgb(0, 195, 255);
+}
+
+span {
+  color: black;
+}
