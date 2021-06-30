@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import io from 'socket.io-client';
 import './App.css';
@@ -6,7 +5,6 @@ import './App.css';
 function App() {
   const [state, setState] = useState({ message: '', name: '' });
   const [chat, setChat] = useState([]);
-
   const socketRef = useRef();
 
   useEffect(() => {
@@ -42,15 +40,25 @@ function App() {
     <div className="main">
       <div className="wrapper">
         <div className="wrapper-two">
-          <div className="render-chat">
-            {renderChat()}
-          </div>
+          <div className="render-chat">{renderChat()}</div>
           <form onSubmit={onMessageSubmit}>
             <div className="name-field">
-							<input type="text" name="name" onChange={(e) => onTextChange(e)} value={state.name} placeholder="Имя"/>
+              <input
+                type="text"
+                name="name"
+                onChange={(e) => onTextChange(e)}
+                value={state.name}
+                placeholder="Имя"
+              />
             </div>
             <div>
-							<input type="text" name="message" onChange={(e) => onTextChange(e)} value={state.message} placeholder="Сообщение"/>
+              <input
+                type="text"
+                name="message"
+                onChange={(e) => onTextChange(e)}
+                value={state.message}
+                placeholder="Сообщение"
+              />
             </div>
             <button></button>
           </form>
